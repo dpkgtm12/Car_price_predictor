@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" type="text/css" href="css/contact.css"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   
+
+</head>
+<body>
+    <header>
+        <li>
+            <h2>Car Price Predictor
+                <hr>
+                </h3>
+        </li>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" id="hid"></i>
+        <li>
+            <ul>
+                <a href="/">Home</a>
+            </ul>
+            <ul>
+                <a href="/about/">About</a>
+            </ul>
+            <ul>
+                <a href="/contact/">Contact</a>
+            </ul>
+
+            <ul>
+                <a href="/services/">Services</a>
+            </ul>
+            <ul>
+                <a href="/blog/">Blogs</a>
+            </ul>
+
+
+        </li>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" id="sho"></i>
+    </header>
+    <div id="box">
+	<div class="container">
+		<h1>Contact Us</h1>
+		<form action="#" method="POST">
+			<!-- <label for="name">Name</label> -->
+			<input type="text" id="name" name="name" placeholder="Your name..">
+
+			<!-- <label for="email">Email</label> -->
+			<input type="text" id="email" name="email" placeholder="Your email..">
+
+			<!-- <label for="message">Message</label> -->
+			<textarea id="message" name="message" placeholder="Write something.." ></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+		<div class="social-icons">
+			<a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png"/></a>
+			<a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png"/></a>
+			<a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png"/></a>
+			<a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png"/></a>
+		</div>
+	</div>
+    <div id="para">
+    <p >Thank you for your interest in our car price prediction service! If you have any questions or feedback, please don't hesitate to contact us using the form below.
+        <br>Our team of experienced data scientists and machine learning experts are dedicated to providing accurate and reliable car price predictions.
+    </p>
+</div></div>
+    <footer>
+        <div class="name">
+            <h2>Car Price Predictor
+                <hr>
+            </h2>
+        </div>
+        <div class="term">24x7 Support&ensp;&ensp;|&ensp;&ensp;Privacy Policy&ensp;&ensp;|&ensp;&ensp; Terms &
+            Conditions</div>
+        <div class="copy">
+
+            All rights reserved &copy;2023 Car Price Prediction
+        </div>
+
+    </footer>
+    <script>
+     
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+</html>

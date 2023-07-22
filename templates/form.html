@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link href="css/form.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+       
+</head>
+<body>
+    <header>
+        <li>
+            <h2>Car Price Predictor
+                <hr>
+                </h3>
+        </li>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" id="hid"></i>
+            <li>
+                <ul>
+                    <a href="/">Home</a>
+                </ul>
+                <ul>
+                    <a href="/about/">About</a>
+                </ul>
+                <ul>
+                    <a href="/contact/">Contact</a>
+                </ul>
+    
+                <ul>
+                    <a href="/services/">Services</a>
+                </ul>
+                <ul>
+                    <a href="/blog/">Blogs</a>
+                </ul>
+
+
+            </li>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" id="sho"></i>
+    </header>
+    <div class="slider"><img src="/static/images/car1.jpeg" alt=""  id="slideImg">
+        <div class="section">
+
+            <!-- name,company,year,kms_driven,fuel_type -->
+<h2 class="det"> Enter Car Details</h2>
+            <form method="POST" action="{% url 'calc' %}">
+                {% csrf_token %}
+                
+                <input id="Brands" name="brand" placeholder="Brand like Mahindra , Hyundai" type="text" required>
+                <input id="model" name="model" placeholder="Model- Maruti Suzuki Alto 800 Lx " type="text" required>
+                <label for="year"></label>
+                <!-- <input id="year" name="year" placeholder="Year" type="number" min="1900" max="2100" required> -->
+                <select id="year" name="year">
+                    {% for year in years %}
+                      <option value="{{ year }}">{{ year }}</option>
+                    {% endfor %}
+                <!-- <label for="kms_driven"></label> -->
+                <input id="kms_driven" name="kms_driven" placeholder="kms_driven"  required>
+                <select id="fuel" name="fuel" required>
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="CNG">CNG</option>
+                </select>
+
+                <input type="submit" value="Get Price">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="name">
+            <h2>Car Price Predictor
+                <hr>
+            </h2>
+        </div>
+        <div class="term">24x7 Support&ensp;&ensp;|&ensp;&ensp;Privacy Policy&ensp;&ensp;|&ensp;&ensp; Terms
+            &
+            Conditions</div>
+        <div class="copy">
+
+            All rights reserved &copy;2023 Car Price Prediction
+        </div>
+
+    </footer>
+    <script>
+        // let slideIndex = 0;
+        // showSlides();
+
+        // function showSlides() {
+        //     let i;
+        //     let slides = document.getElementsByClassName("slider");
+        //     for (i = 0; i < slides.length; i++) {
+        //         slides[i].style.display = "none";
+        //     }
+        //     slideIndex++;
+        //     if (slideIndex > slides.length) { slideIndex = 1 }
+        //     slides[slideIndex - 1].style.display = "block";
+        //     setTimeout(showSlides, 4000); // Change image every 2 seconds
+        // }
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+
+</html>

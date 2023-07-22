@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" type="text/css" href="css/service.css"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/service.css' %}">
+
+</head>
+
+<body>
+    <header>
+        <li>
+            <h2>Car Price Predictor
+                <hr>
+                </h3>
+        </li>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" id="hid"></i>
+            <li>
+                <ul>
+                    <a href="/">Home</a>
+                </ul>
+                <ul>
+                    <a href="/about/">About</a>
+                </ul>
+                <ul>
+                    <a href="/contact/">Contact</a>
+                </ul>
+    
+                <ul>
+                    <a href="/services/">Services</a>
+                </ul>
+                <ul>
+                    <a href="/blog/">Blogs</a>
+                </ul>
+
+
+            </li>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" id="sho"></i>
+    </header>
+    <main>
+        <div class="im">
+            <div id="section1">
+                <img src="/static/images/k.jpg" alt="" width="400px" height="310px" id="hg">
+            </div>
+
+            <section>
+                <h1>Data Collection and Analysis Services</h1>
+                <p>Our team of experts collects and analyzes data from various sources to provide accurate predictions
+                    of car prices. We use advanced algorithms to analyze historical data, current market trends, and
+                    other factors that affect car prices. This enables us to deliver the most reliable car price
+                    predictions to our clients.</p>
+            </section>
+        </div>
+        <div class="im">
+
+            <section>
+                <h1>Custom Car Price Prediction Models</h1>
+                <p>We offer custom car price prediction models tailored to meet the unique needs of our clients. Our
+                    models are designed to cater to dealers, lenders, and individuals who are looking to buy or sell a
+                    car. Whether you're looking for a quick estimate or a detailed analysis of car prices, our custom
+                    models can provide you with the insights you need to make informed decisions.</p>
+            </section>
+            <div id="section1">
+                <img src="/static/images/s.png" alt="" width="400px" height="310px" id="hg">
+            </div>
+
+        </div>
+        <div class="im">
+            <div id="section1">
+                <img src="/static/images/n.png" alt="" width="400px" height="310px" id="hg">
+            </div>
+            <section>
+                <h1>Consulting and Support Services</h1>
+                <p>Our team of experts is available to provide consulting and support services to help
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="name">
+            <h2>Car Price Predictor
+                <hr>
+            </h2>
+        </div>
+        <div class="term">24x7 Support&ensp;&ensp;|&ensp;&ensp;Privacy Policy&ensp;&ensp;|&ensp;&ensp; Terms &
+            Conditions</div>
+        <div class="copy">
+
+            All rights reserved &copy;2023 Car Price Prediction
+
+
+    </footer>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+
+</html>

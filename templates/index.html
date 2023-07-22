@@ -1,0 +1,233 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Predictor</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link href="/static/css/index.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div class="slider"><img src="" alt="" id="slideImg">
+            <div id="hd">
+                <!-- <header> -->
+                    
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()" id="hid"></i>
+                        <li>
+                            <div class="name">
+                                <h2>Car Price Predictor
+                                    <hr>
+                                </h2>
+                            </div>
+                        <!-- </li>
+                        <li> -->
+                        <div id="menu">
+                            <ul>
+                                <a href="/home">Home</a>
+                            </ul>
+                            <ul>
+                                <a href="/about/">About</a>
+                            </ul>
+                            <ul>
+                                <a href="/contact/">Contact</a>
+                            </ul>
+                            <ul>
+                                <a href="/services/">Services</a>
+                            </ul>
+                            <ul>
+                                <a href="/blog/">Blogs</a>
+                            </ul>
+                        </div>
+                        </li>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()" id="sho"></i>
+                <!-- </header> -->
+            </div>
+            <div class="link">
+                <h2>Check Value Of Your Car Here</h2>
+                <a href="/form/" class="hero-btn">Value
+                    Check</a>
+            </div>
+        </div>
+    </div>
+    <h2 id="say">Know About Us </h2>
+    <main>
+        <section>
+            <h1>What is Car Price Prediction?</h1>
+            <p>Car Price Prediction is a website that helps car buyers and sellers to predict the market value of their
+                vehicles. Our advanced algorithms analyze multiple data points such as make, model, year, mileage,
+                condition, and location to give you an accurate estimate of your car's worth.</p>
+        </section>
+
+        <section>
+            <h1>About Our Team <br> Members </h1>
+            <p>Our team is comprised of experienced data scientists and software engineers who are passionate about
+                providing the best possible service to our users. We are constantly working to improve our algorithms
+                and data sources to ensure that our predictions are as accurate as possible.</p>
+        </section>
+
+        <section>
+            <h1>Contact Us<br><br></h1>
+            <p>If you have any questions or feedback, please feel free to contact us using the form on our Contact page.
+                We would love to hear from you!</p>
+        </section>
+    </main>
+
+    <h2 id="say">What our Customer Says </h2>
+
+
+    <div id="slideshow">
+        <div class="slide-wrapper">
+            <div class="slide" id="comment-box">
+                <img src="/static/images/p1.jpg" alt="" width="70px" height="70px" id="hg">
+                <h4>John Doe</h4>
+                <p><span>Commented on:</span> 5 Predictions for Car Prices in 2023</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam at urna sagittis auctor.
+                    Vivamus non nunc vel est fermentum interdum. Nam vehicula, ipsum at pharetra tincidunt, lacus risus
+                    convallis nibh, vel aliquet libero ex eu sapien.</p>
+            </div>
+
+            <div class="slide" id="comment-box">
+                <img src="/static/images/car.jpg" alt="" width="70px" height="70px" id="hg">
+                <h4>Jane Smith</h4>
+                <p><span>Commented on:</span> 5 Predictions for Car Prices in 2023</p>
+                <p>Nullam nec arcu ut velit lacinia pulvinar. In hac habitasse platea dictumst. Sed tempus justo sed
+                    libero vulputate, vel vestibulum nulla feugiat. Nullam auctor magna risus, at elementum nisi feugiat
+                    sit amet.</p>
+            </div>
+            <div class="slide" id="comment-box">
+                <img src="/static/images/car2.jpg" alt="" width="70px" height="70px" id="hg">
+                <h4>chrish mac</h4>
+                <p><span>Commented on:</span> 5 Predictions for Car Prices in 2023</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam at urna sagittis auctor.
+                    Vivamus non nunc vel est fermentum interdum. Nam vehicula, ipsum at pharetra tincidunt, lacus risus
+                    convallis nibh, vel aliquet libero ex eu sapien.</p>
+            </div>
+        </div>
+
+    </div>
+    <h2 id="say">Connect Us</h2>
+    <div id="box">
+
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form action="#" method="POST">
+                <!-- <label for="name">Name</label> -->
+                <input type="text" id="name" name="name" placeholder="Your name..">
+
+                <!-- <label for="email">Email</label> -->
+                <input type="text" id="email" name="email" placeholder="Your email..">
+
+                <!-- <label for="message">Message</label> -->
+                <textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+            <div class="social-icons">
+                <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png" /></a>
+                <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" /></a>
+                <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png" /></a>
+                <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin.png" /></a>
+            </div>
+        </div>
+        <div id="para">
+            <p>Thank you for your interest in our car price prediction service! If you have any questions or feedback,
+                please don't hesitate to contact us using the form below.
+                <br>Our team of experienced data scientists and machine learning experts are dedicated to providing
+                accurate and reliable car price predictions.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="name">
+            <h2>Car Price Predictor
+                <hr>
+            </h2>
+        </div>
+        <div class="term">24x7 Support&ensp;&ensp;|&ensp;&ensp;Privacy Policy&ensp;&ensp;|&ensp;&ensp; Terms
+            &
+            Conditions</div>
+        <div class="copy">
+
+            All rights reserved &copy;2023 Car Price Prediction
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let arr = ["car1.jpeg", "car2.jpg", "car3.jpg", "car4.jpg"]
+            let x = "/static/images/" + arr[slideIndex];
+            // console.log(x);
+            document.getElementById("slideImg").src = x;
+            slideIndex++;
+            if (slideIndex >= 4) { slideIndex = 1 }
+            // slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        // new slider 
+        let x = 0;
+        showSlide();
+
+        function showSlide() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlide, 3000); // Change image every 2 seconds
+        }
+        //
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+            // console.log(currentScroll);
+            if (currentScroll >= 500) {
+                // console.log("Successfully");
+                document.getElementById("hd").style.position = "fixed";
+                document.getElementById("navLinks").style.background = "black";
+                // document.getElementById("hd").style.color = "black";
+            }
+            if (currentScroll <= 500) {
+                // console.log("Successfully");
+                document.getElementById("hd").style.position = "absolute";
+                document.getElementById("navLinks").style.background = "transparent";
+                // document.getElementById("hd").style.color = "white";
+            }
+        });
+
+
+
+
+        // const currentScroll = window.pageYOffset;
+        // console.log(currentScroll);
+        // if (currentScroll > 500){
+        //     console.log("Successfully");
+        //     document.getElementById("hd").style.position="fixed";
+        // }
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+
+</html>

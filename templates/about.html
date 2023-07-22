@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Car Price Prediction</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" type="text/css" href="css/about.css"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   
+
+</head>
+
+<body>
+    <header>
+        <li>
+            <h2>Car Price Predictor
+                <hr>
+                </h3>
+        </li>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" id="hid"></i>
+        <li>
+            <ul>
+                <a href="/">Home</a>
+            </ul>
+            <ul>
+                <a href="/about/">About</a>
+            </ul>
+            <ul>
+                <a href="/contact/">Contact</a>
+            </ul>
+
+            <ul>
+                <a href="/services/">Services</a>
+            </ul>
+            <ul>
+                <a href="/blog/">Blogs</a>
+            </ul>
+
+
+        </li>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" id="sho"></i>
+    </header>
+    <main>
+        <section>
+            <h1>What is Car Price Prediction?</h1>
+            <p>Car Price Prediction is a website that helps car buyers and sellers to predict the market value of their
+                vehicles. Our advanced algorithms analyze multiple data points such as make, model, year, mileage,
+                condition, and location to give you an accurate estimate of your car's worth.</p>
+        </section>
+
+        <section>
+            <h1>About Our Team <br> Members </h1>
+            <p>Our team is comprised of experienced data scientists and software engineers who are passionate about
+                providing the best possible service to our users. We are constantly working to improve our algorithms
+                and data sources to ensure that our predictions are as accurate as possible.</p>
+        </section>
+
+        <section>
+            <h1>Contact Us<br><br></h1>
+            <p>If you have any questions or feedback, please feel free to contact us using the form on our Contact page.
+                We would love to hear from you!</p>
+        </section>
+    </main>
+    <footer>
+        <div class="name">
+            <h2>Car Price Predictor
+                <hr>
+            </h2>
+        </div>
+        <div class="term">24x7 Support&ensp;&ensp;|&ensp;&ensp;Privacy Policy&ensp;&ensp;|&ensp;&ensp; Terms &
+            Conditions</div>
+        <div class="copy">
+
+            All rights reserved &copy;2023 Car Price Prediction
+        </div>
+
+
+    </footer>
+    <script>
+     
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+
+</html>

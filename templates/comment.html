@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Car Price Predictions</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="stylesheet" type="text/css" href="css/comment.css"> -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/comment.css' %}">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+      
+</head>
+<body>
+    <header>
+        <li>
+            <h2>Car Price Predictor
+                <hr>
+                </h3>
+        </li>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" id="hid"></i>
+        <li>
+            <ul>
+                <a href="/">Home</a>
+            </ul>
+            <ul>
+                <a href="/about/">About</a>
+            </ul>
+            <ul>
+                <a href="/contact/">Contact</a>
+            </ul>
+
+            <ul>
+                <a href="/services/">Services</a>
+            </ul>
+            <ul>
+                <a href="/blog/">Blogs</a>
+            </ul>
+
+
+        </li>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" id="sho"></i>
+    </header>
+	<h1 id="h1"> Comments</h1>
+	<div class="comment-box">
+		<h4>John Doe</h4>
+		<p><span>Commented on:</span> 5 Predictions for Car Prices in 2023</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam at urna sagittis auctor. Vivamus non nunc vel est fermentum interdum. Nam vehicula, ipsum at pharetra tincidunt, lacus risus convallis nibh, vel aliquet libero ex eu sapien.</p>
+	</div>
+	
+	<div class="comment-box1">
+		<h4>Jane Smith</h4>
+		<p><span>Commented on:</span> 5 Predictions for Car Prices in 2023</p>
+		<p>Nullam nec arcu ut velit lacinia pulvinar. In hac habitasse platea dictumst. Sed tempus justo sed libero vulputate, vel vestibulum nulla feugiat. Nullam auctor magna risus, at elementum nisi feugiat sit amet.</p>
+	</div>
+	
+	<div class="comment-form">
+		<h4>Leave a Comment</h4>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			
+			<label for="comment">Comment:</label>
+			<textarea id="comment" name="comment" rows="5" required></textarea>
+			
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+    <footer>
+        <div class="name">
+            <h2>Car Price Predictor
+                <hr>
+            </h2>
+        </div>
+        <div class="term">24x7 Support&ensp;&ensp;|&ensp;&ensp;Privacy Policy&ensp;&ensp;|&ensp;&ensp; Terms &
+            Conditions</div>
+        <div class="copy">
+
+            All rights reserved &copy;2023 Car Price Prediction
+        </div>
+
+    </footer>
+    <script>
+     
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.left = "0";
+        }
+        var navLinks = document.getElementById("navLinks");
+        function hideMenu() {
+            navLinks.style.left = "-200px";
+        }
+    </script>
+</body>
+</html>
